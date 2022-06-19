@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그 연습</title>
+</head>
+
+    <h1>LOGIN</h1>
+    <form action="/login.php" method="get">
+        <p>ID : <input type="text" name = "id" \></p>
+        <p>PASSWORD : <input type = "password" name="pwd" \></p>
+        <p>생년월일 : <input type="date" name=" Birth"></p>
+        <p>자기소개 : <textarea cols=" 20" row = "5"></textarea></p>
+        <p>국가 : <input type = "text" list="국가" name= " con" > 
+        <datalist id = "국가">
+         <option value = "한국"></option>
+         <option value = "일본"></option> 
+         <option value = "미국"></option>   
+        </datalist> </p> 
+        <P>가고싶은곳 : <input type=" text" list="sight" name = "view" > </P>
+        <datalist id = "sight">
+            
+            <option value = "브라질"></option>
+            <option value = "일본"></option> 
+            <option value = "천사의섬"></option> 
+
+        </datalist>  
+        <p>
+            성별 : 남 <input type="radio" name = "sex" value = "male"> 여 <input type="radio" name = "sex" value = "female">
+        </p>
+        <p> 취미 : 여행 <input type= "checkbox" name ="hobby" value = "1">
+                   운동 <input type = "checkbox" name ="hobby" value = "2">
+         </p>
+        <P><input type="submit" value=" 전송 "><input type = "reset" value="취소" > </P>
+        
+    </form>
+</body>
+</html>

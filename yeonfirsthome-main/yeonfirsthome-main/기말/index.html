@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <style>
+        form div {
+            text-align: center;
+        }
+        form input {
+            width: 200px;
+        }
+        #btn {
+            width: 80px;
+            margin-top: 10px;
+        }
+        .idForm {
+            margin-top: 200px;
+        }
+        body {
+            background-image: url(../image/night.jfif);
+        }
+        h2 {   
+            margin-bottom: 5px;
+        }
+        #pwd2 {
+            margin-top: 30px;
+        }
+        h1,h2 {color: whitesmoke;
+            font-family: 'Single Day', cursive;
+                }
+        
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1 style="text-align: center;" >여행 블로그</h1>
+    </div>
+    <div class="background_img">
+        <hr>
+        <form action="SCHEDULER.HTML">
+            <div class="idForm">
+                <label for="id"><h2>ID</h2></label>
+                <input type="email" id="id" minlength="5" maxlength="30" required>
+            </div>
+            <div>
+                <label for="pwd"><h2 id="pwd2">Password</h2></label>
+                <input type="password" id="pwd" minlength="5" maxlength="12" required>
+            </div>
+            <div>
+                <input id="btn" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    
+
+
+</script>
+</body>
+</html>

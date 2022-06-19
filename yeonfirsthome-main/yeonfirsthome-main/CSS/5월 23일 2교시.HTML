@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 꾸미기</title>
+    
+    <style>
+        input[type = text]
+         {
+            color: red;
+            border: 1px solid rgba(177, 174, 174, 0.999);
+            border-radius: 2px;
+        }
+        textarea
+         {
+            color: red;
+            border: 1px solid rgba(177, 174, 174, 0.999);
+            border-radius: 2px;
+        }
+        input::placeholder 
+        {
+            color: rgba(177, 174, 174, 0.999);
+        }
+        input[type = text]:focus
+         {
+            font-size: 120%;
+            outline: 1px solid green;
+        }
+        textarea:focus 
+        {
+            font-size: 120%;
+            outline: 1px solid green;
+        }
+        input[type = text]:hover 
+        {
+            background-color: aliceblue;
+        }
+        @keyframes chColor
+         {
+            0% { color: red }
+            50% { color: green }
+            100% { color: blue }
+        }
+        
+        @keyframes bomb 
+        {
+            0% { font-size: 500% }
+            100% { ont-size: 100% }
+        }
+       
+       
+        .ch1 {
+            animation-name: chColor;
+            animation-direction: reverse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .ch2 {
+            animation-name: chColor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .ch3 {
+            animation-name: chColor;
+            animation-direction: reverse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .ch4 {
+            animation-name: chColor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .ch5 {
+            animation-name: chColor;
+            animation-direction: reverse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .ch6 {
+            animation-name: chColor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .ch7 {
+            animation-name: chColor;
+            animation-direction: reverse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+
+        .sz {
+            animation-name: bomb;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h3>
+        <span class="ch1">C</span><span class="ch2">O</span><span class="ch3">N</span><span class="ch4">T</span><span class="ch5">A</span><span class="ch6">C</span><span class="ch7">T</span> <span class="sz">U</span><span class="sz">S</span>
+    </h3>
+    <hr>
+    <form>
+        <div>
+            <label for="name">Name </label>
+            <input type="text" id="name" placeholder="홍길동">
+        </div>
+        <div>
+            <label for="email">Email </label>
+            <input type="text" id="email" placeholder="elvis@graceland.com">
+        </div>
+        <div>
+            <label for="comment">Comment </label>
+            <textarea name="" id="comment" cols="30" rows="3"></textarea>
+        </div>
+    </form>
+</body>
+</html>
